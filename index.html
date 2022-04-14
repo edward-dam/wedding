@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<!--Author: Ed Dam-->
+
+<head>
+  <title>Adela & Edward's Wedding</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="Adela & Edward's Wedding" content="Adela & Edward's Wedding" />
+  <meta name="Adela Edward Wedding" content="Adela Edward Wedding" />
+  <meta name="AdelaEdwardWedding" content="AdelaEdwardWedding" />
+  <link rel="stylesheet" type="text/css" href="lib/w3.css" />
+  <link rel="stylesheet" type="text/css" href="lib/styles.css" />
+  <link rel="icon" type="image/png" href="images/icon.png">
+</head>
+
+<body>
+
+<!--Scripts-->
+<script src="scripts/navbar.js"></script>
+<script src="scripts/countdown.js"></script>
+<script src="scripts/slide.js"></script>
+
+<!--Header-->
+<header class="w3-container w3-white wed-header">
+  Adela&nbsp;&amp;&nbsp;Edward's Wedding
+</header>
+
+<!--Body-->
+<div class="w3-row">
+
+  <!--Navigation Bar-->
+  <div class="w3-bar w3-green">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-teal wed-tablink w3-teal" style="width:15%;" onclick="openTab(event, 'Home');"><i class="fa fa-home"></i></a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-teal wed-tablink" style="width:19%;" onclick="openTab(event, 'Date');">Date</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-teal wed-tablink" style="width:21%;" onclick="openTab(event, 'Photos');">Photos</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-teal wed-tablink" style="width:24%;" onclick="openTab(event, 'Location');">Location</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-teal wed-tablink" style="width:21%;" onclick="openTab(event, 'About');">About</a>
+  </div>
+
+  <!--Home Page-->
+  <div id="Home" class="w3-container w3-padding-32 w3-white wed-tabpage">
+    <b>Introduction</b><br />
+    <p>Welcome To Our Wedding Website...</p>
+    <img src="images/bamboo.jpg" alt="img" class="wed-landscape"/><br />
+    <small>Engagement - 11<sup>th</sup> May 2017 - Japan</small>
+  </div>
+
+  <!--Date Page-->
+  <div id="Date" class="w3-container w3-padding-32 w3-white wed-tabpage wed-hide">
+    <b>Countdown To Wedding</b><br />
+    <p>11<sup>th</sup> May 2022</p>
+    <div id="Timer"></div>
+  </div>
+
+  <!--Photos Page-->
+  <div id="Photos" class="w3-container w3-padding-32 w3-white wed-tabpage wed-hide">
+    <b>Wedding Photos</b><br />
+    <div class="w3-display-container wed-toggles">
+      <div class="w3-container wed-slide">
+        <p>Pre-Departure</p>
+        <small>5<sup>th</sup> May 2022</small><br />
+        <img src="images/comingsoon.jpg" alt="img" class="wed-landscape"/>
+      </div>
+      <div class="w3-container wed-slide wed-hide">
+        <p>Arrival - Seychelles</p>
+        <small>6<sup>th</sup> May 2022</small><br />
+        <img src="images/comingsoon.jpg" alt="img" class="wed-landscape"/>
+      </div>
+       <div class="w3-container wed-slide wed-hide">
+        <p>Wedding Preparations</p>
+        <small>7<sup>th</sup>-10<sup>th</sup> May 2022</small><br />
+        <img src="images/comingsoon.jpg" alt="img" class="wed-landscape"/>
+      </div>
+      <div class="w3-container wed-slide wed-hide">
+        <p>Wedding Day</p>
+        <small>11<sup>th</sup> May 2022</small><br />
+        <img src="images/comingsoon.jpg" alt="img" class="wed-landscape"/>
+      </div>
+      <button class="w3-button w3-round-xxlarge w3-padding-small w3-large w3-green w3-hover-green w3-hover-opacity-off w3-opacity w3-display-left" onclick="plusDivs(-1)"><br /><small>&#10094;</small><br /><br /></button>
+      <button class="w3-button w3-round-xxlarge w3-padding-small w3-large w3-green w3-hover-green w3-hover-opacity-off w3-opacity w3-display-right" onclick="plusDivs(1)"><br /><small>&#10095;</small><br /><br /></button>
+    </div>
+  </div>
+
+  <!--Location Page-->
+  <div id="Location" class="w3-container w3-padding-32 w3-white wed-tabpage wed-hide">
+    <b>Wedding Location</b><br />
+    <p>Constance Ephelia Mahé Seychelles</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.643774092595!2d55.40172931552585!3d-4.657452996616797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x22e02c075925c309%3A0xddd30a72d327f3e3!2sConstance%20Ephelia%20Mah%C3%A9%20Seychelles!5e0!3m2!1sen!2suk!4v1582124705986!5m2!1sen!2suk" class="wed-square"></iframe>
+  </div>
+
+  <!--About Page-->
+  <div id="About" class="w3-container w3-padding-32 w3-white wed-tabpage wed-hide">
+    <b>About Us</b><br />
+    <p>How We Met</p>
+    <small>
+      Although we both graduated from<br />
+      University of Surrey in 2010.<br />
+      We did not meet for another 4 years,<br />
+      courtesy of `Plenty of Fish`.<br />
+    </small>
+    <p>Significant Dates</p>
+    <small>
+      -- First Date --<br />
+      11<sup>th</sup> May 2014 - Guildford<br /><br />
+      -- Engagement --<br />
+      11<sup>th</sup> May 2017 - Japan<br /><br />
+      -- COVID-19 --<br />
+      11<sup>th</sup> May 2020 - <font color="red">Postponed</font><br />
+      11<sup>th</sup> May 2021 - <font color="red">Postponed</font><br /><br />
+      -- Wedding --<br />
+      11<sup>th</sup> May 2022 - Seychelles<br />
+    </small>
+  </div>
+    
+</div>
+
+<!--Footer-->
+<footer class="w3-container w3-green wed-footer">
+  &copy; adelaedwardwedding.com. All rights reserved.<br />
+</footer>
+
+</body>
+
+</html>
