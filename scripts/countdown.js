@@ -12,6 +12,6 @@ var x = setInterval(function() {
   + minutes + " mins " + seconds + " secs ";
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("Timer").innerHTML = "Countdown Expired!";
+    document.getElementById("Timer").innerHTML = "0 days 0 hrs 0 mins 0 secs";
   }
 }, 1000);
