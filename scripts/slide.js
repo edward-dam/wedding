@@ -1,19 +1,19 @@
 // Author: Ed Dam
 
-var slideIndex = 1;
-showDivs(slideIndex);
+var slidePhotosIndex = 1;
+showPhotosDivs(slidePhotosIndex);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
+function slidePhotosPlus(n) {
+  showPhotosDivs(slidePhotosIndex += n);
 }
 
-function showDivs(n) {
+function showPhotosDivs(n) {
   var i;
-  var x = document.getElementsByClassName("wed-slide");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
+  var x = document.getElementsByClassName("wed-slide-photos");
+  if (n > x.length) {slidePhotosIndex = 1}
+  if (n < 1) {slidePhotosIndex = x.length}
   for (i = 0; i < x.length; i++) {
      x[i].style.display = "none";
   }
-  x[slideIndex-1].style.display = "block";
+  x[slidePhotosIndex-1].style.display = "block";
 }
