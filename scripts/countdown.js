@@ -1,6 +1,6 @@
 // Author: Ed Dam
 
-var weddingDate = new Date("May 11, 2022 14:00:00").getTime();
+var weddingDate = new Date("May 11, 2022 14:30:00").getTime();
 var x = setInterval(function() {
   var now = new Date().getTime();
   var distance = now - weddingDate;
